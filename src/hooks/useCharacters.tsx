@@ -1,7 +1,7 @@
 
 
 
-function useCharacters (){
+function useCharacters ():{
     
 
     
