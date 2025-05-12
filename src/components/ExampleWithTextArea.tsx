@@ -43,8 +43,18 @@ export const ExampleWithTextArea = () => {
       </button>
       {/* <textarea onChange={(event) => setIsOver(event.target.value.length > maxChars)} />
         {isOver && <p>Il testo non deve superare {maxChars} caratteri </p>} */}
-      {isLoading && <Loader></Loader>}
-      {!isLoading && characters.map((item) => <p>{item.name}</p>)}
+      {isLoading && (
+        <>
+          <Loader></Loader> <Loader></Loader>
+        </>
+      )}
+      {!isLoading &&
+        characters.map((character) => (
+          <>
+            {' '}
+            <p>{character.name}</p> <p>{character.image}</p>
+          </>
+        ))}
     </>
   );
 };

@@ -4,7 +4,7 @@ import './index.css';
 import { ExampleWithTextArea } from './components/ExampleWithTextArea.tsx';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+  <StrictMode >
     {/*     <ExampleWithArray /> */}
     <ExampleWithTextArea></ExampleWithTextArea>
   </StrictMode>
