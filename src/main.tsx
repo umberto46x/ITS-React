@@ -1,11 +1,14 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import { ExampleWithTextArea } from './components/ExampleWithTextArea.tsx';
+/* import { ExampleWithTextArea } from './components/ExampleWithTextArea.tsx';
+ */ import { ReducerComponentTest } from './components/ReducerComponentTest.tsx';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode >
+  <StrictMode>
     {/*     <ExampleWithArray /> */}
-    <ExampleWithTextArea></ExampleWithTextArea>
+    {/* <ExampleWithTextArea></ExampleWithTextArea> */}
+
+    <ReducerComponentTest></ReducerComponentTest>
   </StrictMode>
 );
