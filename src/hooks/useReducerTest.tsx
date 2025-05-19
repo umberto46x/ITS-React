@@ -5,31 +5,12 @@ export const useReducerTest = (state: number[], action: Action): number[] => {
     case 'add':
       return state.length === 0
         ? [0]
-        : [
-            ...state,
-            Number(
-              Math.floor(
-                Math.random() *
-                  (state[state.length - 1] + 1 - state[state.length - 1] + 1)
-              ) + state[state.length - 1].toFixed(2)
-            ),
-          ];
+        : [...state, state[state.length - 1] + Math.random()];
       break;
     case 'sub':
       return state.length === 0
         ? [0]
-        : [
-            ...state,
-            Number(
-              Math.floor(
-                Math.random() *
-                  (state[state.length - 1] -
-                    (state[state.length - 1] - 1) +
-                    1) +
-                  (state[state.length - 1] - 1)
-              ).toFixed(2)
-            ),
-          ];
+        : [...state, state[state.length - 1] - Math.random()];
       break;
     case 'clean':
       return [];
