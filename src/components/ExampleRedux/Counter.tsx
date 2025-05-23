@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { decrement, increment, set } from '../redux/counterSlice';
-import type { State } from '../redux/store';
+import { decrement, increment, set } from '../../redux/counterSlice';
+import type { State } from '../../redux/store';
 
 export const Counter = () => {
   console.log('sto rirenderizzando counter?');

@@ -1,5 +1,5 @@
 import { useReducer } from 'react';
-import { useReducerTest } from '../hooks/useReducerTest';
+import { useReducerTest } from '../../hooks/useReducerTest';
 
 export const ReducerComponentTest = () => {
   const [reducerArray, setStateReducerArray] = useReducer(useReducerTest, []);

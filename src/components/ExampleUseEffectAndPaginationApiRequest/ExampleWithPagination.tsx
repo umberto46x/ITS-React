@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import type { Character, ResponseCharacters } from '../models/Character';
+import type { Character, ResponseCharacters } from '../../models/Character';
 import { Loader } from './Loader';
 import '../index.css';
 
-export const ExampleWithTextArea = () => {
+export const ExampleWithPagination = () => {
   console.log('sto rirenderizzando');
-  // const maxChars = 30;
-  // const [isOver, setIsOver] = useState(false);
   const [characters, setCharacters] = useState<Character[]>([]);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState<number>(0);
@@ -41,8 +39,6 @@ export const ExampleWithTextArea = () => {
       <button disabled={page === totalPages} onClick={() => setPage(page + 1)}>
         Next
       </button>
-      {/* <textarea onChange={(event) => setIsOver(event.target.value.length > maxChars)} />
-        {isOver && <p>Il testo non deve superare {maxChars} caratteri </p>} */}
       {isLoading && (
         <>
           <Loader></Loader> <Loader></Loader>

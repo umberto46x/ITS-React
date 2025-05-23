@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { toggle } from '../redux/themeSlice';
-import type { State } from '../redux/store';
+import { toggle } from '../../redux/themeSlice';
+import type { State } from '../../redux/store';
 
 export const Theme = () => {
   console.log('sto rirenderizzando theme?');

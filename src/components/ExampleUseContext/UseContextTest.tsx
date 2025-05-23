@@ -1,9 +1,10 @@
 import { createContext, useState } from 'react';
-import type { Nationality } from '../models/Nationality';
+import type { Nationality } from '../../models/Nationality';
+
+import type { Theme } from '../../models/Theme';
 import { UseContextTest2 } from './UseContextTest2';
-import { UseContextTest4 } from './UseContextTest4';
 import { UseContextTest3 } from './UseContextTest3';
-import type { Theme } from '../models/Theme';
+import { UseContextTest4 } from './UseContextTest4';
 
 export const NationalityContext = createContext<Nationality>('Italian');
 export const ThemeContext = createContext<Theme>('light');
