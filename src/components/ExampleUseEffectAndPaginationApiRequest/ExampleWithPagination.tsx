@@ -50,6 +50,26 @@ export const ExampleWithPagination = () => {
               <CharacterCard character={character} />
             ))}
         </div>
+        <div className="mx-auto mt-5">
+          <button
+            className="bg-green-400 
+              border border-black border-3 rounded-lg mx-5 d-block p-5"
+            disabled={page === 1}
+            onClick={() => setPage(page - 1)}
+          >
+            Previous Page
+          </button>
+          <span className="bg-green-400 border border-black border-3 rounded-lg mx-5 d-block p-5 ">
+            {page}
+          </span>
+          <button
+            className="bg-green-400   border border-black border-3 rounded-lg mx-5 d-block p-5 "
+            disabled={page === totalPages}
+            onClick={() => setPage(page + 1)}
+          >
+            Next Page
+          </button>
+        </div>
       </div>
     </>
   );

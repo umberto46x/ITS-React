@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const ExampleWithTextArea = () => {
+export const ExampleTextArea = () => {
   const maxLength: number = 30;
   const [isTextareaOverflowing, setTextareaOverflowing] =
     useState<boolean>(false);
