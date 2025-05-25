@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useCharacters } from './useCharacters';
 import { Loader } from './Loader';
 import { CharacterCard } from './CharacterCard';
