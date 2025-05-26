@@ -15,6 +15,7 @@ export const Square = ({
   );
 };
 
+
 export const SubText = (props: { textColor: string }) => {
   return <p style={{ color: props.textColor }}>Sono dentro il rettangolo</p>;
 };

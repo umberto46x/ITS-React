@@ -25,7 +25,7 @@ export const ExampleToDoList = () => {
     <>
       <div className="grid mt-5 ">
         <div className="mx-auto mt-5">
-          <h2 className="p-5 text-center border border-3 rounded-lg   mb-5 w-50 ">
+          <h2 className="p-5 text-center border border-3 border-black bg-green-400 rounded-lg   mb-5 w-50 ">
             ToDo List Exercise
           </h2>
         </div>
